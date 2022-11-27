@@ -1,9 +1,9 @@
 // iterators4.rs
 // Execute `rustlings hint iterators4` or use the `hint` watch subcommand for a hint.
 
-// I AM NOT DONE
-
 pub fn factorial(num: u64) -> u64 {
+    let numbers = (1..num + 1).collect::<Vec<_>>();
+    numbers.iter().fold(1, |acc, x| acc * x)
     // Complete this function to return the factorial of num
     // Do not use:
     // - return
